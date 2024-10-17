@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPPLOYPATH=/home3/alexryan/public_html/
+    - /bin/rsync -av public/ $DEPPLOYPATH
