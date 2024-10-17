@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPPLOYPATH=/home3/alexryan/public_html/
-    - /bin/rsync -a --exclude 'index.php' public/ $DEPPLOYPATH
+    - /bin/rsync -a --exclude 'index.php' public/ $DEPPLOYPATH 
