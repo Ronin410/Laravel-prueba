@@ -2,10 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/si', function () {
+Route::get('/alejandro', function () {
     return view('welcome');
 });
 
-Route::get('/w', function () {
+Route::get('/ryan', function () {
     return "wdwq";
 });
