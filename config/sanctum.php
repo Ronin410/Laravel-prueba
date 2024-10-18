@@ -80,4 +80,10 @@ return [
         'validate_csrf_token' => Illuminate\Foundation\Http\Middleware\ValidateCsrfToken::class,
     ],
 
+    'cors' => [
+        'paths' => ['api/*'],
+        'allowed_methods' => ['*'],
+        'allowed_origins' => ['*'],
+        'allowed_headers' => ['*'],
+    ],
 ];

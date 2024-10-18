@@ -2,14 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PruebaController ;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/ryan', function () {
-    return "wdwq";
-});
+Route::get('/ryan', [PruebaController ::class, 'pruebaVista']);
 
 
-Route::get('/ryan/{post}', function ($post) {
-    return "wdwq {$post}";
-});
+Route::get('/ryan/save', [PruebaController ::class, 'prueba']);
