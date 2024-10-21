@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPPLOYPATH=/home3/alexryan/public_html/
+    - export DEPPLOYPATH=/home3/alexryan/public_html/api
     - /bin/rsync -a --exclude 'index.php' public/ $DEPPLOYPATH
